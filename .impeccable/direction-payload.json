@@ -1,0 +1,122 @@
+{
+  "title": "Escolha o mundo visual",
+  "question": "O sorteio caiu no Mapa dos Becos. Mantém, pega uma alternativa ou sorteia de novo.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Mapa dos Becos",
+      "kicker": "THE ROLL",
+      "lineage": "Cartografia de trilha e mapas topográficos da Rocinha, entre a Gávea, São Conrado e o Dois Irmãos",
+      "thesis": "Cada passeio aparece como uma rota desenhada no morro: os horários são as saídas, os preços ficam nos marcos do caminho.",
+      "palette": ["#2b1d14", "#c4552b", "#e9b44c", "#2f6b4f", "#f1e6d2"],
+      "materials": ["curvas de nível em terracota", "papel de mapa de campo", "verde da Floresta da Tijuca nas bordas"],
+      "viewport": "O morro em curvas de nível ocupa a tela inteira, com as três rotas traçadas. O título grande vem por cima, e 'Reservar' e o WhatsApp ficam na legenda do mapa.",
+      "risk": "Se o mapa ficar só como decoração, vira papel de parede e o visitante não lê os passeios como rotas.",
+      "raised": [
+        {"from": "Darkroom (declinado)", "raise": "A reserva vira um percurso em etapas na ordem certa: passeio, horário, reservar. Nada aparece fora de ordem."},
+        {"from": "Catálogo de brinquedos (declinado)", "raise": "O preço e o horário de cada rota aparecem grandes, como um carimbo no marco, sem precisar caçar."},
+        {"from": "Cidade dormindo (declinado)", "raise": "A rota noturna passa o mapa para o modo noite, com as janelas acesas em dourado."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Laje & Tijolo",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Arquitetura da favela: tijolo baiano aparente, laje de concreto e caixa d'água azul",
+      "thesis": "O site é construído como o morro, com as seções empilhadas laje sobre laje e cada passeio como um andar.",
+      "palette": ["#b5562f", "#8a8279", "#2c64a8", "#e9b44c", "#1e1a17"],
+      "materials": ["tijolo aparente", "concreto da laje", "azul de caixa d'água"],
+      "viewport": "Uma pilha de blocos de tijolo e laje forma a encosta, com o título em letras grandes pintadas no muro.",
+      "risk": "É a leitura mais óbvia de 'favela'. Se a mão pesar, vira fantasia."
+    },
+    {
+      "id": "challenger-tropicalia",
+      "label": "Capa Tropicália",
+      "verdict": "competitive",
+      "lineage": "Capas de disco tropicalistas de 1968, com colagem e poesia concreta",
+      "thesis": "A Rocinha como capa de disco: fotos recortadas dos passeios coladas num quadro tropical pintado.",
+      "palette": ["#1f7a3a", "#f2a12b", "#d8432f", "#f6e7b8"],
+      "materials": ["fotos recortadas a tesoura", "folhagem pintada", "letras de poesia concreta"],
+      "viewport": "Uma colagem ocupando a tela, com 'FAVELA' quebrado em sílabas espalhadas e as fotos dos passeios como figuras coladas.",
+      "case": "É muito brasileira, então ganha na identificação. Perde na clareza: preço e horário se perdem no meio da colagem.",
+      "risk": "Pesada no celular, e o caos atrapalha quem só quer reservar."
+    },
+    {
+      "id": "challenger-darkroom",
+      "label": "Laboratório Fotográfico",
+      "verdict": "declined",
+      "lineage": "Revelação de foto sob luz âmbar",
+      "palette": ["#c46a1c", "#3a3a3a", "#f3efe6"],
+      "materials": ["luz de segurança âmbar", "papel fotográfico"],
+      "thesis": "As fotos dos passeios se revelando devagar.",
+      "viewport": "Uma bandeja de revelação com a foto surgindo aos poucos.",
+      "case": "O turista não se reconhece num laboratório fotográfico.",
+      "risk": "Fica distante do Rio.",
+      "kept": "Etapas em ordem fixa, que viraram o fluxo da reserva."
+    },
+    {
+      "id": "challenger-toy",
+      "label": "Catálogo de Brinquedos",
+      "verdict": "declined",
+      "lineage": "Catálogo de brinquedos dos anos 80",
+      "palette": ["#d7261e", "#f6c90e", "#1d4fa3"],
+      "materials": ["fundo de cor chapada", "selo estourado de preço"],
+      "thesis": "Os passeios lado a lado, cada um com um selo de preço.",
+      "viewport": "Uma grade cheia de produtos.",
+      "case": "Barateia uma experiência na comunidade.",
+      "risk": "Parece promoção de loja.",
+      "kept": "O preço e o horário gritam, impossível de não ver."
+    },
+    {
+      "id": "challenger-sleeping-city",
+      "label": "Cidade Dormindo",
+      "verdict": "declined",
+      "lineage": "Cidade noturna que vira colcha",
+      "palette": ["#141c38", "#e9b44c", "#f1ede4"],
+      "materials": ["luzes de janela bordadas"],
+      "thesis": "Os bairros sonhando debaixo da mesma noite.",
+      "viewport": "Uma noite azul-marinho com as janelas virando estrelas.",
+      "case": "É poético, mas esconde a oferta.",
+      "risk": "Fica abstrato demais para quem quer vender.",
+      "kept": "A noite com as janelas douradas, que virou o modo do Night Tour."
+    },
+    {
+      "id": "challenger-riso",
+      "label": "Risograph",
+      "verdict": "declined",
+      "lineage": "Impressão riso com tintas fluorescentes",
+      "palette": ["#ff48b0", "#0078bf", "#ffe800"],
+      "materials": ["grão de impressão", "registro desalinhado"],
+      "thesis": "Tintas chapadas sobrepostas, levemente fora de registro.",
+      "viewport": "Formas de tinta sobrepostas num papel quente.",
+      "case": "É uma estética de estúdio independente, não do Rio.",
+      "risk": "Genérico.",
+      "kept": "Poucas tintas com compromisso total, aplicado às curvas do mapa."
+    },
+    {
+      "id": "challenger-akari",
+      "label": "Luminária Akari",
+      "verdict": "declined",
+      "lineage": "Luminárias de papel washi",
+      "palette": ["#f4ead6", "#c9a477", "#d0402b"],
+      "materials": ["papel washi", "luz quente"],
+      "thesis": "Volumes de papel brilhando no escuro.",
+      "viewport": "Luas de papel penduradas.",
+      "case": "Não tem relação com a Rocinha.",
+      "risk": "Fora de lugar.",
+      "kept": "A luz como estado: ao passar o mouse, a rota acende."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "O padrão do turismo",
+    "thesis": "O site de passeio que todo mundo faz, só que bem executado.",
+    "palette": ["#ffffff", "#1b1b1b", "#e07a2f"],
+    "materials": ["foto aérea de drone", "cards de passeio"],
+    "viewport": "Foto de drone da favela cobrindo o fundo, título centralizado, botão laranja e três cards embaixo.",
+    "risk": "Fica igual a todos os concorrentes, de propósito."
+  },
+  "steer": true
+}
