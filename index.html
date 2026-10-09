@@ -60,7 +60,17 @@
       <a href="#avaliacoes">Avaliações</a>
       <a href="#contato">Contato</a>
     </nav>
-    <div class="lang-switch" role="group" aria-label="Idioma / Language"><button type="button" data-lang="pt" lang="pt" aria-pressed="true" title="Português">PT</button><button type="button" data-lang="en" lang="en" aria-pressed="false" title="English">EN</button><button type="button" data-lang="es" lang="es" aria-pressed="false" title="Español">ES</button></div>
+    <div class="lang-menu">
+      <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-list" aria-label="Idioma: Português"><svg class="ico"><use href="#i-lang"/></svg><span class="cur">PT</span><svg class="ico chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
+      <ul class="lang-list" id="lang-list" hidden>
+        <li><button type="button" data-lang="pt" lang="pt-BR"><b>PT</b>Português</button></li>
+        <li><button type="button" data-lang="en" lang="en"><b>EN</b>English</button></li>
+        <li><button type="button" data-lang="es" lang="es"><b>ES</b>Español</button></li>
+        <li><button type="button" data-lang="fr" lang="fr"><b>FR</b>Français</button></li>
+        <li><button type="button" data-lang="da" lang="da"><b>DA</b>Dansk</button></li>
+        <li><button type="button" data-lang="he" lang="he" dir="rtl"><b>HE</b>עברית</button></li>
+      </ul>
+    </div>
     <a class="btn small top-cta" href="https://www.favelawalkingtour.com.br/booking-now/" target="_blank" rel="noopener">Reservar agora <svg class="ico arrow"><use href="#i-arrow"/></svg></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><svg class="ico"><use href="#i-menu"/></svg></button>
   </div>
