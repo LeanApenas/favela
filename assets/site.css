@@ -79,10 +79,14 @@ body.night .top{background:var(--night)}body.night .nav a{color:var(--night-ink-
 .lang-btn .ico{width:18px;height:18px}
 .lang-btn .chev{width:14px;height:14px;transition:transform .3s var(--ease)}
 .lang-btn[aria-expanded="true"] .chev{transform:rotate(180deg)}
-.lang-list{position:absolute;top:calc(100% + 8px);inset-inline-end:0;min-width:190px;margin:0;padding:6px;list-style:none;background:#FBF6E8;border-radius:var(--r);box-shadow:0 1px 2px rgba(34,24,15,.1),0 18px 40px -16px rgba(34,24,15,.45);z-index:50;animation:langIn .28s var(--ease)}
+.flag{width:20px;height:14px;flex:none;border-radius:3px;box-shadow:0 0 0 1px rgba(34,24,15,.14)}
+.cur-flag{display:inline-flex}
+.lang-list{direction:ltr;position:absolute;top:calc(100% + 8px);inset-inline-end:0;min-width:190px;margin:0;padding:6px;list-style:none;background:#FBF6E8;border-radius:var(--r);box-shadow:0 1px 2px rgba(34,24,15,.1),0 18px 40px -16px rgba(34,24,15,.45);z-index:50;animation:langIn .28s var(--ease)}
 @keyframes langIn{from{opacity:0;transform:translateY(-6px)}}
 .lang-list button{display:flex;align-items:center;gap:12px;width:100%;padding:10px 12px;border:0;background:none;border-radius:10px;cursor:pointer;font-weight:600;font-size:.98rem;text-align:start;color:var(--ink)}
 .lang-list button b{font-weight:800;font-stretch:78%;letter-spacing:.06em;font-size:.78rem;color:var(--ink-3);min-width:22px}
+.lang-list button span{text-align:left}
+.lang-list button{gap:10px}
 .lang-list button:hover,.lang-list button:focus-visible{background:var(--paper-2);outline-offset:-2px}
 .lang-list button[aria-current="true"]{color:var(--route-deep)}
 .lang-list button[aria-current="true"] b{color:var(--route-deep)}

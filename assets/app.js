@@ -268,7 +268,8 @@
     document.title = t(PT_TITLE); metaDesc.content = t(PT_DESC);
     $$('[data-wa]').forEach(a => { a.href = `https://wa.me/${WA}?text=${encodeURIComponent(t(a.dataset.msg || 'Olá! Quero reservar um passeio com o Favela Walking Tour.'))}`; });
     $('.lang-btn .cur').textContent = lang.toUpperCase();
-    langBtn.setAttribute('aria-label', `${t('Idioma')}: ${$(`#lang-list [data-lang="${lang}"]`).textContent}`);
+    $('.lang-btn .cur-flag').innerHTML = $(`#lang-list [data-lang="${lang}"] .flag`).outerHTML;
+    langBtn.setAttribute('aria-label', `${t('Idioma')}: ${$(`#lang-list [data-lang="${lang}"] span`).textContent}`);
     $$('#lang-list [data-lang]').forEach(b => b.setAttribute('aria-current', b.dataset.lang === lang ? 'true' : 'false'));
     menuBtn.setAttribute('aria-label', t(menu.classList.contains('open') ? 'Fechar menu' : 'Abrir menu'));
     $$('[data-copy] span').forEach(s => { if (!s.closest('[data-done]')) s.textContent = t('Copiar'); });
